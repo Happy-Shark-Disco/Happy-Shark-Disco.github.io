@@ -8,49 +8,56 @@ PLEASE DO NOT CONTACT THE EMAIL IT IS FAKE
 ----------------------------------------------------
 -->
 
-<head>
-  <style>
-    body {
-      border: 3px coral solid;
-    }
+<style>
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-    #main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  body {
+    border: 3px coral solid;
+  }
 
-    #main>p {
-      margin-top: 5px;
-    }
+  #main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+  }
 
-    #footer,
-    #header {
-      position: sticky;
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      justify-content: center;
-      background-color: coral;
-    }
+  #main>p {
+    margin-top: 5px;
+  }
 
-    #header {
-      top: 0;
-    }
+  #footer,
+  #header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: coral;
+  }
 
-    #footer {
-      bottom: 0;
-    }
+  #header {
+    top: 0;
+  }
 
-  </style>
+  #footer {
+    bottom: 0;
+  }
+
+</style>
+
+<body>
   <div id="header">
     <p>
       Happy Shark Disco
     </p>
   </div>
-</head>
-
-<body>
   <div id="main">
     <h1>This is a Happy Shark Disco!</h1>
     <p>
@@ -70,6 +77,6 @@ PLEASE DO NOT CONTACT THE EMAIL IT IS FAKE
     </p>
   </div>
   <div id="footer">
-    <a href="mailto:help@happysharkdisco.co">Contact us here</a>
+    <a href="mailto:happysharkdisco@example.com">Contact us here</a>
   </div>
 </body>
